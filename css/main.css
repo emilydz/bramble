@@ -1,0 +1,247 @@
+/* global */
+/* old */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* new */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Philosopher&family=Space+Grotesk&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+/* old */
+  --green: #9da39f;
+  --gray-dark: #444343;
+  --gray: #8a8a8a;
+  --gray-light: #f9f9f9;
+  --purple-light: #E6E8EF;
+  --purple-dark: #170449;
+  --dark-red: #270101;
+  --font-sans-serif: 'Oxygen', sans-serif;
+  --font-serif: 'EB Garamond', serif;
+/* new */
+  --space: 'Space Grotesk', sans-serif;
+  --nunito: 'Nunito Sans', sans-serif;
+  --phil: 'Philosopher', sans-serif;
+  --lightblue: #BCE6F8;
+  --gray-dark: #444343;
+  --lightpurple: #C9B9D9;
+  --orange: #E1A253;
+  --darkblue: #3268AF;
+  --darkpurple: #4B2B68;
+  --red: #AE5F5A;
+
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.content {
+    background-color: var(--gray-dark);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+model-viewer {
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    --progress-bar-height: 1px;
+    margin: 0 auto;
+    outline: none;
+  }
+
+/* side nav */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+
+  .sidenav-icon {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+    padding: 2rem;
+    color: whitesmoke;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.sidenav-icon--sub {
+    position: relative;
+    margin: 2rem 3rem;
+    color: black;
+    font-size: 3rem;
+    cursor: pointer;
+}
+  
+  .sidenav a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--nunito);
+    color: black;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--lightpurple);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* nav & social media */
+.nav-list {
+    list-style: none;
+    padding: 0 15rem;
+    text-transform: uppercase;
+    font-family: var(--nunito);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    letter-spacing: 2px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color:white;
+}
+
+/* social media */
+.nav-list--socialmedia {
+    list-style: none;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 5px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--gray-dark);
+    border-radius: 50%;
+    color: white;
+}
+
+
+/* sections */
+
+/* hero */
+.section-hero {
+    position: relative;
+    background: linear-gradient(125deg, rgba(50,104,175,1) 0%, rgba(201,185,217,1) 23%, rgba(225,162,83,1) 45%, rgba(255,255,255,1) 100%);
+
+}
+
+.section-hero__title {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: var(--gray-light);
+    size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--nunito);
+    font-weight: lighter;
+    margin: 0;
+}
+
+.section-hero__caption {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    color: var(--gray-light);
+    size: .3rem;
+    letter-spacing: 2px;
+    font-family: var(--nunito);
+    font-weight: lighter;
+    padding: 0;
+}
+
+.section-hero__downnav {
+    position: absolute;
+    bottom: 5%;
+    padding: 0 40rem;
+    margin: 0;
+    font-size: 5rem;
+    opacity: .7;
+}
+
+
+
+/* footer */
+
+footer {
+    padding: .5rem;
+    background-color: var(--gray-dark);
+    height: 5rem;
+}
+
+
+@media only screen and (max-width:1000px){
+    .section-hero{
+        margin: 0;
+    }
+
+    .section-hero__title {
+        font-size: 3rem;
+    }
+
+    .section-hero__caption {
+        font-size: 2rem;
+    }
+
+    .section-hero__downnav {
+        display: none;
+    }
+
+    model-viewer {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nav-list a { 
+        padding: 0 1rem;
+    }
+
+
+}

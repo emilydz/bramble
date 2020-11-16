@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+body {
+    background-color: whitesmoke;
+}
+
+.about-img {
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-family: var(--nunito);
+    font-weight: lighter;
+    color: black;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 3rem;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.center {  
+    margin: 0 auto;
+    padding: 6rem 15rem;
+}
+
+/* welcome */
+.section-welcome {
+    padding: 1rem 5rem;
+}
+
+.section-welcome__text {
+    color: black;
+    font-size: 2rem;
+    font-family: var(--space);
+    letter-spacing: 2px;
+}
+
+.section-welcome__text a {
+    color: var(--orange);
+    font-size: 2rem;
+    font-family: var(--space);
+    text-decoration: none;
+}
+
+.section-welcome__text a:nth-child(2) {
+    color: var(--darkblue);
+}
+
+.section-welcome__text a:nth-child(3) {
+    color: var(--darkpurple);
+}
+
+.section-welcome__text a:hover {
+    color: var(--purple-light);
+}
+
+/* contact section */
+.section-contact {
+    background-color: var(--gray-dark);
+    padding: 4rem 15rem;
+}
+
+
+.contact-title {
+    font-size: 1rem;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-family: var(--space);
+    font-weight: lighter;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-family: var(--nunito);
+    font-weight: lighter;
+}
+
+
+
+@media only screen and (max-width:1050px) {
+    .center {
+        padding: 2rem;
+    }
+
+    .about-img {
+        width: 70%;
+    }
+
+    .about-text {
+        font-size: 2rem;
+        padding: 0 5rem;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .section-welcome__text, .section-welcome__text a {
+        font-size: 3rem;
+    }
+
+    .section-contact {
+        background-color: var(--gray-dark);
+        padding: 4rem 5rem;
+    }
+
+    .contact-text {
+        font-size: 2rem;
+    }
+}

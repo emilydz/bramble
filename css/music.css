@@ -1,0 +1,58 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    display: none;
+}
+  
+/* grid system */
+.section-grid {
+    margin: 0 3rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+
+/* card system */
+.card {
+    border: 1px solid var(--black);
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.card__title {
+    font-family: var(--space);
+    font-weight:lighter;
+    font-size: 1.5rem;
+    color: var(--gray-dark);
+    letter-spacing: 5px;
+    padding: 0 2rem; 
+    margin: 0 auto;
+}
+
+.card__player {
+    font-size: 1rem;
+    opacity: .6;
+    padding: 1rem;
+}
+
+.card__button-centercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1.5rem;
+}
+

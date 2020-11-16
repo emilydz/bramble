@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Brambles Music - Music</title>
+        <link rel="stylesheet" href="css/music.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1>Music</h1>
+<!-- side nav -->
+<nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+      </div>
+    <span id="mySidenav" class="sidenav-icon--sub" onclick="openNav()">&#9776;</span>
+  </nav>
+    <!-- grid system -->
+        <section class="section-grid">         
+        <!-- card -->
+        <div class="card">
+            <img src="img/cover2.jpg" alt="album cover" class="card__img">
+        <!-- title -->
+            <h2 class="card__title">A Good Song</h2>
+        <!-- buttons and audio player -->
+            <div class="card__button-centercontainer">
+            <!-- audio player -->
+                <audio id="Audio">
+                    <source src="audio.wav" type="audio/wav">
+                </audio>
+            <!-- buttons -->
+                <p class="card__player" onclick="playAudio()">&#9658;</p>
+                <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
+            </div>
+        </div>  
+
+        <!-- card -->
+        <div class="card">
+            <img src="img/cover3.jpg" alt="album cover" class="card__img">
+        <!-- title -->
+            <h2 class="card__title">A Good Song</h2>
+        <!-- buttons and audio player -->
+            <div class="card__button-centercontainer">
+            <!-- audio player -->
+                <audio id="Audio">
+                    <source src="audio.wav" type="audio/wav">
+                </audio>
+            <!-- buttons -->
+                <p class="card__player" onclick="playAudio()">&#9658;</p>
+                <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
+            </div>
+        </div>  
+
+        <!-- card -->
+        <div class="card">
+            <img src="img/cover4.jpg" alt="album cover" class="card__img">
+        <!-- title -->
+            <h2 class="card__title">A Good Song</h2>
+        <!-- buttons and audio player -->
+            <div class="card__button-centercontainer">
+            <!-- audio player -->
+                <audio id="Audio">
+                    <source src="audio.wav" type="audio/wav">
+                </audio>
+            <!-- buttons -->
+                <p class="card__player" onclick="playAudio()">&#9658;</p>
+                <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
+            </div>
+        </div>  
+
+        <!-- card -->
+        <div class="card">
+            <img src="img/cover1.jpg" alt="album cover" class="card__img">
+        <!-- title -->
+            <h2 class="card__title">A Good Song</h2>
+        <!-- buttons and audio player -->
+            <div class="card__button-centercontainer">
+            <!-- audio player -->
+                <audio id="Audio">
+                    <source src="audio.wav" type="audio/wav">
+                </audio>
+            <!-- buttons -->
+                <p class="card__player" onclick="playAudio()">&#9658;</p>
+                <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
+            </div>
+        </div>  
+
+        <!-- card -->
+        <div class="card">
+            <img src="img/cover2.jpg" alt="album cover" class="card__img">
+        <!-- title -->
+            <h2 class="card__title">A Good Song</h2>
+        <!-- buttons and audio player -->
+            <div class="card__button-centercontainer">
+            <!-- audio player -->
+                <audio id="Audio">
+                    <source src="audio.wav" type="audio/wav">
+                </audio>
+            <!-- buttons -->
+                <p class="card__player" onclick="playAudio()">&#9658;</p>
+                <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
+            </div>
+        </div>
+        
+        <!-- card -->
+        <div class="card">
+            <img src="img/cover3.jpg" alt="album cover" class="card__img">
+        <!-- title -->
+            <h2 class="card__title">A Good Song</h2>
+        <!-- buttons and audio player -->
+            <div class="card__button-centercontainer">
+            <!-- audio player -->
+                <audio id="Audio">
+                    <source src="audio.wav" type="audio/wav">
+                </audio>
+            <!-- buttons -->
+                <p class="card__player" onclick="playAudio()">&#9658;</p>
+                <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
+            </div>
+        </div>  
+  
+        </section>
+    <!-- footer -->
+        <footer>
+            <!-- socia media -->
+            <ul class="nav-list--socialmedia">
+              <li>
+                  <a href="#!" class="fa fa-facebook"></a>
+              </li>
+              <li>
+                  <a href="#!" class="fa fa-instagram"></a>
+              </li>
+              <li>
+                  <a href="#!" class="fa fa-twitter"></a>
+              </li>
+          </ul>
+      </footer>
+
+<!-- navbar script -->
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+<!-- audio play/pause script -->
+    <script>
+        var x = document.getElementById("Audio"); 
+
+        function playAudio() { 
+            x.play(); 
+        } 
+
+        function pauseAudio() { 
+            x.pause(); 
+        } 
+    </script>
+</body>
+</html>
+
