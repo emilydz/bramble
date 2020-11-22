@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Bramble Music</title>
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
         <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
@@ -34,9 +34,11 @@
                     </div>
                   <span id="mySidenav" class="sidenav-icon" onclick="openNav()">&#9776;</span>
                 </nav>
-                <h1 class="section-hero__title">Bramble</h1>
-                <p class="section-hero__caption">Art/Music</p>
-                <model-viewer src="https://cdn.glitch.com/a70c5bcc-75b3-4b42-886c-08d7e54f476c%2Fbramble1.glb?v=1604688611156"
+                <img src="img/backgroundnoise-01.png" class="section-hero__img">
+                  <h1 class="section-hero__title">Bramble</h1>
+                  <p class="section-hero__caption">Art/Music</p>
+                <model-viewer src="bramble1.glb"
+                class="section-hero--top"
                 alt="3D model of bramble"
                 shadow-intensity="1"
                 camera-controls
@@ -63,7 +65,7 @@
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
-  
+
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
@@ -73,7 +75,7 @@
 $(function(){
         var interacting = false;
         var initialOrbit = $("model-viewer")[0].getCameraOrbit();
- 
+
         $("model-viewer").on("mousemove", function(e) {
         if (interacting) {
           return;
@@ -89,7 +91,7 @@ $(function(){
 
         $("model-viewer").attr("mousecoords", x + "," + 0);
       });
-      
+
       resetOrbit = function() {
         $("model-viewer")[0].cameraOrbit = initialOrbit.theta * 180 / Math.PI + "deg " + initialOrbit.phi * 180 / Math.PI  + "deg " + initialOrbit.radius + "m";
       }
@@ -102,7 +104,7 @@ $(function(){
       $("model-viewer").on("mouseup", function(e) {
         interacting = false;
         initialOrbit = $("model-viewer")[0].getCameraOrbit();
-        
+
         $("model-viewer").removeAttr("mousecoords");
       });
 
@@ -110,8 +112,8 @@ $(function(){
         $("model-viewer").removeAttr("mousecoords");
         if (!interacting) {
           resetOrbit();
-        } 
-        
+        }
+
       });
     });
     </script>

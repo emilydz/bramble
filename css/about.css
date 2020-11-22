@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 
-.center {  
+.center {
     margin: 0 auto;
     padding: 6rem 15rem;
 }
@@ -63,7 +63,7 @@ body {
 /* contact section */
 .section-contact {
     background-color: var(--gray-dark);
-    padding: 4rem 15rem;
+    padding: 2rem 15rem;
 }
 
 
@@ -77,10 +77,10 @@ body {
 
 .contact-text {
     font-size: 1.5rem;
-    color: whitesmoke;
+    color: white;
     letter-spacing: 2px;
     font-family: var(--nunito);
-    font-weight: lighter;
+    margin: 0;
 }
 
 

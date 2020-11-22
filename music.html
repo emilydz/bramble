@@ -21,7 +21,7 @@
     <span id="mySidenav" class="sidenav-icon--sub" onclick="openNav()">&#9776;</span>
   </nav>
     <!-- grid system -->
-        <section class="section-grid">         
+        <section class="section-grid">
         <!-- card -->
         <div class="card">
             <img src="img/cover2.jpg" alt="album cover" class="card__img">
@@ -37,7 +37,7 @@
                 <p class="card__player" onclick="playAudio()">&#9658;</p>
                 <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
             </div>
-        </div>  
+        </div>
 
         <!-- card -->
         <div class="card">
@@ -54,7 +54,7 @@
                 <p class="card__player" onclick="playAudio()">&#9658;</p>
                 <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
             </div>
-        </div>  
+        </div>
 
         <!-- card -->
         <div class="card">
@@ -71,7 +71,7 @@
                 <p class="card__player" onclick="playAudio()">&#9658;</p>
                 <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
             </div>
-        </div>  
+        </div>
 
         <!-- card -->
         <div class="card">
@@ -88,7 +88,7 @@
                 <p class="card__player" onclick="playAudio()">&#9658;</p>
                 <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
             </div>
-        </div>  
+        </div>
 
         <!-- card -->
         <div class="card">
@@ -106,7 +106,7 @@
                 <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
             </div>
         </div>
-        
+
         <!-- card -->
         <div class="card">
             <img src="img/cover3.jpg" alt="album cover" class="card__img">
@@ -122,8 +122,8 @@
                 <p class="card__player" onclick="playAudio()">&#9658;</p>
                 <p class="card__player" onclick="pauseAudio()">&#9614;&#9614;</p>
             </div>
-        </div>  
-  
+        </div>
+
         </section>
     <!-- footer -->
         <footer>
@@ -146,23 +146,22 @@
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
-    
+
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
     </script>
 <!-- audio play/pause script -->
     <script>
-        var x = document.getElementById("Audio"); 
+        var x = document.getElementById("Audio");
 
-        function playAudio() { 
-            x.play(); 
-        } 
+        function playAudio() {
+            x.play();
+        }
 
-        function pauseAudio() { 
-            x.pause(); 
-        } 
+        function pauseAudio() {
+            x.pause();
+        }
     </script>
 </body>
 </html>
-
