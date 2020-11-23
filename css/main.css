@@ -106,7 +106,7 @@ model-viewer {
   }
 
   .sidenav a:hover {
-    color: var(--lightpurple);
+    color: lightgray;
   }
 
   .sidenav .closebtn {
@@ -168,16 +168,19 @@ model-viewer {
 /* hero */
 .section-hero {
     position: relative;
-    background: linear-gradient(125deg, rgba(50,104,175,1) 0%, rgba(201,185,217,1) 23%, rgba(225,162,83,1) 45%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(196,209,217,1) 0%, rgba(193,174,176,1) 17%, rgba(205,178,151,1) 37%, rgba(233,230,230,1) 85%);
+    /* background: linear-gradient(135deg, rgba(28,51,82,1) 0%, rgba(202,201,208,1) 59%, rgba(250,243,243,1) 96%); */
+
+ /* background: linear-gradient(125deg, rgba(50,104,175,1) 0%, rgba(201,185,217,1) 23%, rgba(225,162,83,1) 45%, rgba(255,255,255,1) 100%); */
 }
 
 .section-hero__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: .1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .07;
 }
 
 .section-hero__title {

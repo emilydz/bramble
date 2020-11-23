@@ -36,24 +36,16 @@ body {
 
 .section-welcome__text {
     color: black;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: var(--space);
     letter-spacing: 2px;
 }
 
 .section-welcome__text a {
-    color: var(--orange);
-    font-size: 2rem;
+    color: darkgray;
+    font-size: 2.5rem;
     font-family: var(--space);
     text-decoration: none;
-}
-
-.section-welcome__text a:nth-child(2) {
-    color: var(--darkblue);
-}
-
-.section-welcome__text a:nth-child(3) {
-    color: var(--darkpurple);
 }
 
 .section-welcome__text a:hover {
@@ -63,24 +55,16 @@ body {
 /* contact section */
 .section-contact {
     background-color: var(--gray-dark);
-    padding: 2rem 15rem;
+    padding: 0 15rem;
 }
 
 
 .contact-title {
     font-size: 1rem;
-    color: whitesmoke;
+    color: black;
     letter-spacing: 2px;
     font-family: var(--space);
     font-weight: lighter;
-}
-
-.contact-text {
-    font-size: 1.5rem;
-    color: white;
-    letter-spacing: 2px;
-    font-family: var(--nunito);
-    margin: 0;
 }
 
 
@@ -92,6 +76,8 @@ body {
 
     .about-img {
         width: 70%;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .about-text {
@@ -110,9 +96,5 @@ body {
     .section-contact {
         background-color: var(--gray-dark);
         padding: 4rem 5rem;
-    }
-
-    .contact-text {
-        font-size: 2rem;
     }
 }
